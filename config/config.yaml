@@ -66,7 +66,7 @@ endpoints:
 
   - name: bookmarks
     group: services
-    url: "https://bk.hanz.lol"
-    interval: 5m
+    url: "https://bk.hanz.lol/health"
+    interval: 10m
     conditions:
       - "[STATUS] == 200"
