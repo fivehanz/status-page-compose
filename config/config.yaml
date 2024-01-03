@@ -42,3 +42,31 @@ endpoints:
     conditions:
       - "[STATUS] == 200"
       - "[CERTIFICATE_EXPIRATION] > 48h"
+
+  - name: devBlog
+    group: services
+    url: "https://devBlog.hanz.lol"
+    interval: 5m
+    conditions:
+      - "[STATUS] == 200"
+
+  - name: hanz web
+    group: services
+    url: "https://web.hanz.lol"
+    interval: 5m
+    conditions:
+      - "[STATUS] == 200"
+
+  - name: abyss
+    group: services
+    url: "https://abyss.hanz.lol"
+    interval: 5m
+    conditions:
+      - "[STATUS] == 200"
+
+  - name: bookmarks
+    group: services
+    url: "https://bk.hanz.lol"
+    interval: 5m
+    conditions:
+      - "[STATUS] == 200"
