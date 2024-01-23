@@ -70,3 +70,10 @@ endpoints:
     interval: 10m
     conditions:
       - "[STATUS] == 200"
+  
+  - name: shlink
+    group: services
+    url: "https://hanz.lol/rest/health"
+    interval: 5m
+    conditions:
+      - "[STATUS] == 200"
